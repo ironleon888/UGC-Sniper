@@ -19,7 +19,7 @@ def get_x_token():
 
     x_token = r.post("https://auth.roblox.com/v2/logout",
                      cookies={".ROBLOSECURITY": cookie}).headers["x-csrf-token"]
-    print("Logged in.")
+    print("登录.")
 
     while 1:
         # Gets the x_token every 4 minutes.
@@ -29,7 +29,7 @@ def get_x_token():
 
 
 def buy(json, itemid, productid):
-    print("Spam buying limited...")
+    print("spam 正在買 limited...")
 
     data = {
         "collectibleItemId": itemid,
